@@ -1,0 +1,174 @@
+/* Ensure full height and no margin for body */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+ 
+/* Background image for the entire page */
+body {
+    background-image: url('https://images.pexels.com/photos/247160/pexels-photo-247160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+ 
+/* Container to center the form and give it a transparent background */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    align-items: center;
+    /* background:color(from color srgb r g b); Semi-transparent white background */
+    border-radius: 10px; /* Cylindrical appearance for the container */
+    backdrop-filter: blur(10px); /* Optional: adds a blur effect to the background behind the container */
+}
+ 
+/* Title styling */
+h1 {
+    text-align: center;
+    color: whitesmoke; /* Green color for title */
+}
+ 
+/* Fieldset styling */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 25px; /* Cylindrical appearance for fieldset */
+    padding: 20px;
+    margin: 0;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.5); /* Semi-transparent border color */
+}
+
+.gender-selection {
+    padding: 10px;
+}
+
+.gender-title {
+    margin-bottom: 10px;
+}
+
+.radio-container {
+    display: inline-block;
+    margin-right: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.radio-container input[type="radio"] {
+    display: none; /* Hide default radio button */
+}
+
+.radio-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    vertical-align: middle;
+    position: relative;
+    margin-right: 8px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.radio-container input[type="radio"]:checked + .radio-box {
+    background-color: white;
+    border-color: white;
+}
+
+.radio-label {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color:black;
+}
+
+/* Container for first and last name fields */
+.name-container {
+    display: flex;
+    justify-content: space-between;
+}
+.city-container{
+    display: flex;
+    justify-content: space-between;
+}
+.code-container{
+    display: flex;
+    justify-content: space-between;
+}
+/* .address-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+}
+
+.address-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.address-container input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.address-container input:focus {
+    border-color: #007bff;
+    outline: none;
+} */
+ 
+/* Group for input fields to control width */
+.input-group {
+    flex: 1;
+    margin-right: 20px; /* Space between the fields */
+}
+/* Remove margin for the last input group */
+.input-group:last-child {
+    margin-right: 1;
+}
+ 
+/* Apply green color to all text and labels */
+label, h1 {
+    color:whitesmoke;
+}
+ 
+/* Input and textarea styling */
+input, select, textarea {
+    width: 90%;
+    padding: 12px; /* Increased padding for better appearance */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px; /* Cylindrical appearance for inputs */
+    color: black; /* Text color inside input fields */
+    background: white; /* Solid white background for input fields */
+}
+ 
+/* Button styling */
+button {
+    display: block;
+    width: 30%;
+    padding: 12px; /* Increased padding for better appearance */
+    border: none;
+    border-radius: 25px; /* Cylindrical appearance for button */
+    background: #007BFF; /* Background color of the button */
+    color: white; /* Text color of the button */
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px auto 0;
+}
+ 
+button:hover {
+    background: #0056b3; /* Darker shade of blue on hover */
+    text-align: center;
+}
